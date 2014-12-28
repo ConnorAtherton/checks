@@ -1,0 +1,24 @@
+{
+  "name": "checks",
+  "version": "1.0.0",
+  "description": "Standalone type checks for JavaScript",
+  "main": "src/checks.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ConnorAtherton/checks.git"
+  },
+  "keywords": [
+    "checks",
+    "types",
+    "type"
+  ],
+  "author": "Connor Atherton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ConnorAtherton/checks/issues"
+  },
+  "homepage": "https://github.com/ConnorAtherton/checks"
+}
