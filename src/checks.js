@@ -69,5 +69,9 @@ module.exports = {
 
   objectToString: function(o) {
     return Object.prototype.toString.call(o);
+  },
+
+  isWrapperType: function(obj) {
+    return this.isNumber(obj) || this.isString(obj) || this.isBoolean(obj);
   }
 }

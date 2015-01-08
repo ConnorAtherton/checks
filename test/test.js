@@ -46,4 +46,8 @@ describe("It should perform correct checks", function() {
  it("should recognize a buffer", function() {
    return check.isBuffer(new Buffer(1));
  });
+
+ it("should recognize a wrapper type", function() {
+   return check.isWrapperType("1");
+ });
 });
