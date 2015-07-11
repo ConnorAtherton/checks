@@ -1,0 +1,91 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@2.11.3
+3 info using node@v0.13.0-pre
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec { raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/Connor/Repos/personal/checks',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/Connor/.npm/checks/1.1.0/package.tgz not in flight; packing
+9 verbose tar pack [ '/Users/Connor/.npm/checks/1.1.0/package.tgz',
+9 verbose tar pack   '/Users/Connor/Repos/personal/checks' ]
+10 verbose tarball /Users/Connor/.npm/checks/1.1.0/package.tgz
+11 verbose folder /Users/Connor/Repos/personal/checks
+12 info prepublish checks@1.1.0
+13 verbose addLocalTarball adding from inside cache /Users/Connor/.npm/checks/1.1.0/package.tgz
+14 silly cache afterAdd checks@1.1.0
+15 verbose afterAdd /Users/Connor/.npm/checks/1.1.0/package/package.json not in flight; writing
+16 verbose afterAdd /Users/Connor/.npm/checks/1.1.0/package/package.json written
+17 silly publish { name: 'checks',
+17 silly publish   version: '1.1.0',
+17 silly publish   description: 'Standalone type checks for JavaScript',
+17 silly publish   main: 'src/checks.js',
+17 silly publish   scripts: { test: 'mocha' },
+17 silly publish   repository:
+17 silly publish    { type: 'git',
+17 silly publish      url: 'git+ssh://git@github.com/ConnorAtherton/checks.git' },
+17 silly publish   keywords: [ 'checks', 'types', 'type' ],
+17 silly publish   author: { name: 'Connor Atherton' },
+17 silly publish   license: 'MIT',
+17 silly publish   bugs: { url: 'https://github.com/ConnorAtherton/checks/issues' },
+17 silly publish   homepage: 'https://github.com/ConnorAtherton/checks',
+17 silly publish   gitHead: 'dcdbf4d8aa4d65516dd7e4cd962c04a23a5a700f',
+17 silly publish   readme: 'ERROR: No README data found!',
+17 silly publish   _id: 'checks@1.1.0',
+17 silly publish   _shasum: 'a507ca69fa82067aa605d308e39e11f9e648b2fa',
+17 silly publish   _from: '.' }
+18 verbose getPublishConfig undefined
+19 silly mapToRegistry name checks
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/checks
+23 verbose publish registryBase https://registry.npmjs.org/
+24 silly publish uploading /Users/Connor/.npm/checks/1.1.0/package.tgz
+25 verbose request uri https://registry.npmjs.org/checks
+26 verbose request sending authorization for write operation
+27 info attempt registry request try #1 at 12:16:04
+28 verbose request using bearer token for auth
+29 verbose request id f66b91e5aca47bdc
+30 http request PUT https://registry.npmjs.org/checks
+31 http 403 https://registry.npmjs.org/checks
+32 verbose headers { 'content-type': 'application/json',
+32 verbose headers   'cache-control': 'max-age=60',
+32 verbose headers   'content-length': '95',
+32 verbose headers   'accept-ranges': 'bytes',
+32 verbose headers   date: 'Sat, 11 Jul 2015 19:16:03 GMT',
+32 verbose headers   via: '1.1 varnish',
+32 verbose headers   connection: 'keep-alive',
+32 verbose headers   'x-served-by': 'cache-sjc3125-SJC',
+32 verbose headers   'x-cache': 'MISS',
+32 verbose headers   'x-cache-hits': '0',
+32 verbose headers   'x-timer': 'S1436642163.454791,VS0,VE194' }
+33 verbose request invalidating /Users/Connor/.npm/registry.npmjs.org/checks on PUT
+34 error publish Failed PUT 403
+35 verbose stack Error: "You cannot publish over the previously published version 1.1.0." : checks
+35 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:247:14)
+35 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:170:14)
+35 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:354:22)
+35 verbose stack     at Request.emit (events.js:112:17)
+35 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1207:14)
+35 verbose stack     at Request.emit (events.js:131:20)
+35 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1153:12)
+35 verbose stack     at IncomingMessage.emit (events.js:131:20)
+35 verbose stack     at _stream_readable.js:910:16
+35 verbose stack     at process._tickCallback (node.js:358:11)
+36 verbose statusCode 403
+37 verbose pkgid checks
+38 verbose cwd /Users/Connor/Repos/personal/checks
+39 error Darwin 14.1.0
+40 error argv "node" "/usr/local/bin/npm" "publish"
+41 error node v0.13.0-pre
+42 error npm  v2.11.3
+43 error code E403
+44 error "You cannot publish over the previously published version 1.1.0." : checks
+45 error If you need help, you may report this error at:
+45 error     <https://github.com/npm/npm/issues>
+46 verbose exit [ 1, true ]

@@ -67,6 +67,17 @@ module.exports = {
     return Buffer.isBuffer(arg);
   },
 
+  isBrowserHostObject: function(arg) {
+    switch (objectToString(arg)) {
+      case '[object File]':
+      case '[object Blob]':
+      case '[object FormData]':
+        return true;
+      default:
+        return false;
+    }
+  },
+
   objectToString: function(o) {
     return Object.prototype.toString.call(o);
   },
